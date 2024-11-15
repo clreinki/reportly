@@ -1,7 +1,7 @@
 datetime
 configparser
 azure-identity
-msgraph-core
+msgraph-core==0.2.2
 plotly-express
 pandas
 Jinja2

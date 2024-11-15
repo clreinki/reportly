@@ -350,7 +350,7 @@ class Graph:
             else:
                 targets_output = "Not relevant"
             created_temp = created.split(".")[0]
-            created_time = datetime.datetime.strptime(created_temp, '%Y-%m-%dT%H:%M:%S').date()
+            created_time = datetime.datetime.fromisoformat(created_temp.rstrip('Z')).date()
             
             if created_time > start and created_time < end:
                 temp_dict["id"] = id
